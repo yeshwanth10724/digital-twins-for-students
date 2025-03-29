@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #E0F7FA, #FFF3E0);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            min-height: 100vh;
+            color: #333;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #3b34a3;
+        }
+        .bar-graph {
+            display: flex;
+            align-items: flex-end;
+            gap: 5px;
+            width: 150px;
+            height: 100px;
+            background-color: #f0f0f0;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .bar {
+            width: 20px;
+            background-color: #4f46e5;
+            border-radius: 5px 5px 0 0;
+            animation: grow 1.5s ease-out forwards;
+        }
+
+        @keyframes grow {
+            0% { height: 0; }
+            100% { height: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Student Progress -->
+    <div class="card">
+        <div>
+            <h2>Student Progress</h2>
+            <button>Subjects</button>
+            <button>Attendance</button>
+            <button>Projects</button>
+            <p>Overall Progress: Excellent</p>
+        </div>
+        <div class="bar-graph">
+            <div class="bar" style="height: 80%;"></div>
+            <div class="bar" style="height: 90%;"></div>
+            <div class="bar" style="height: 85%;"></div>
+        </div>
+    </div>
+
+    <!-- Mental Wellness Tracking -->
+    <div class="card">
+        <div>
+            <h2>Mental Wellness Tracking</h2>
+            <button>Stress Levels</button>
+            <button>Mood</button>
+            <button>Sleep Quality</button>
+            <button>Physical Activity</button>
+            <p>Stress Levels: Decreasing</p>
+            <p>Mood: Improving</p>
+            <p>Sleep Quality: Good</p>
+            <p>Physical Activity: Moderate</p>
+        </div>
+        <div class="bar-graph">
+            <div class="bar" style="height: 70%;"></div>
+            <div class="bar" style="height: 60%;"></div>
+            <div class="bar" style="height: 75%;"></div>
+        </div>
+    </div>
+
+    <!-- AI-Powered Recommendations -->
+    <div class="card">
+        <div>
+            <h2>AI-Powered Recommendations</h2>
+            <button>Study Tips</button>
+            <button>Wellness Advice</button>
+            <button>Networking Ideas</button>
+            <button>Group Study Recommendations</button>
+            <p>Focus on Mathematics and Time Management.</p>
+            <p>Incorporate Meditation and Regular Exercise.</p>
+            <p>Attend Networking Events and Workshops.</p>
+            <p>Utilize Study Groups for Better Learning.</p>
+        </div>
+        <div class="bar-graph">
+            <div class="bar" style="height: 65%;"></div>
+            <div class="bar" style="height: 80%;"></div>
+            <div class="bar" style="height: 90%;"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
